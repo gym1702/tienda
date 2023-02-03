@@ -1,0 +1,77 @@
+<!-- {% extends 'base.html' %}
+
+
+{% block tituloweb %}
+Inicio
+{% endblock tituloweb %}
+
+
+{% block contenido %}
+
+    <div class="row">
+        <div class="container-sm col-6">
+            <div class="card mt-5">
+
+                <div class="card-header">
+                    <h2>Registrar usuario</h2>
+                </div>
+
+                <form class="form-control" action="" method="post">
+                    
+                    {% csrf_token %}
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">Nombre de usuario</label>
+                            {{ form.username}}
+                        </div>
+                        <div class="col-6">
+                            <label for="">Email</label>
+                            {{ form.email}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="">Nombre(s)</label>
+                            {{ form.nombres}}
+                        </div>
+                        <div class="col-4">
+                            <label for="">Apellido(s)</label>
+                            {{ form.apellidos}}
+                        </div>
+                        <div class="col-4">
+                            <label for="">Genero</label>
+                            {{ form.genero}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">Contraseña</label>
+                            {{ form.pass1}}
+                        </div>
+                        <div class="col-6">
+                            <label for="">Confirmar contraseña</label>
+                            {{ form.pass2}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- {{ form.as_p}} -->
+
+                    <div align="right">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <a href="{% url 'home_app:panel' %}" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock contenido %} -->

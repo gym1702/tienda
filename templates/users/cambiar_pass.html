@@ -1,0 +1,60 @@
+<!-- {% extends 'base.html' %}
+
+
+{% block tituloweb %}
+Inicio
+{% endblock tituloweb %}
+
+
+{% block contenido %}
+
+    <div class="row">
+        <div class="container-sm col-3">
+            <div class="card mt-5">
+
+                <div class="card-header text-center">
+                    <h2>Cambiar contraseña</h2>                    
+                </div>
+
+                <form class="form-control" method="post">
+                    {% csrf_token %}                 
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Contraseña actual</label>
+                            {{ form.password1}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Contraseña nueva</label>
+                            {{ form.password2}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Confirmar contraseña</label>
+                            {{ form.password3}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                        <a href="{% url 'home_app:panel' %}" class="btn btn-secondary">Cancelar</a>
+                    </div> 
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock contenido %} -->

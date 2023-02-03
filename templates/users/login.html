@@ -1,0 +1,64 @@
+<!-- {% extends 'base.html' %}
+
+
+
+
+{% block tituloweb %}
+Inicio
+{% endblock tituloweb %}
+
+
+{% block contenido %}
+
+    <div class="row">
+        <div class="container-sm col-3">
+            <div class="card mt-5">
+
+                <div class="card-header text-center">
+                    <h2>Bienvenido</h2>
+                    
+                </div>
+
+                <form class="form-control" method="post">
+                    {% csrf_token %}
+
+                    <h6 class="text-center">Acceso al sistema</h6>                   
+                    <br>
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Usuario</label>
+                            {{ form.username}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Contraseña</label>
+                            {{ form.password}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div> 
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock contenido %} -->

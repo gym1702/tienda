@@ -1,0 +1,45 @@
+<!-- {% extends 'base.html' %}
+
+
+{% block tituloweb %}
+Inicio
+{% endblock tituloweb %}
+
+
+{% block contenido %}
+
+    <div class="row">
+        <div class="container-sm col-3">
+            <div class="card mt-5">
+
+                <div class="card-header text-center">
+                    <h2>RGR-Sistemas</h2>
+                    
+                </div>
+
+                <form class="form-control" method="post">
+                    {% csrf_token %}
+
+                    <h6 class="text-center">Verifcación de email</h6>                   
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Ingrese codigo de verificación</label>
+                            {{ form.codigo_registro}}
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Verificar</button>
+                    </div> 
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock contenido %} -->

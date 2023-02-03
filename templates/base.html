@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    
+    <!-- LINKS DE FONTAWESOME (PRIMERO INSTALAR pip install fontawesomefree==6.2.1) -->
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    {% endblock css %}
+
+    <!-- Block titulo web -->
+    <title>{% block tituloweb %} {% endblock tituloweb %}</title>
+
+
+    <!-- Block Navbar -->
+    {% block navbar %}
+        <!-- {% include 'includes/navbar.html' %} -->
+    {% endblock navbar %}
+
+</head>
+
+<!-- Block contenido -->
+<body>
+    {% block contenido %}
+    {% endblock contenido %}
+</body>
+
+
+    <!-- Block footer -->
+    {% block footer %}
+        <!-- {% include 'includes/footer.html' %} -->
+    {% endblock footer %}
+    
+
+
+    <!-- ARCHIVOS JS -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+   
+
+    {% block js %}
+    {% endblock js%}
+
+</html>

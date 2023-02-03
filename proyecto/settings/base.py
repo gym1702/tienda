@@ -52,10 +52,15 @@ DJANGO_APPS = [
 ]
 
 LOCAL_APPS = [
+    'applications.home',
+    'applications.producto',
+    'applications.users',
+    'applications.venta',
 ]
 
 THIRD_PARTY_APPS = [
     'fontawesomefree',
+    'rest_framework',
 ]
 
 
@@ -114,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 #****************************************************************************
 # INDICAMOS QUE ESTA CONFIGURACION SE HARA CARGO DE LOS USUARIOS DEL SISTEMA
 #****************************************************************************
-#AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 
 
